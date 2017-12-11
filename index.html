@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script type="text/javascript" src="button.js"></script>
+  <script type="text/javascript" src="slides.js"></script>
+  <script type="text/javascript" src="youtube.js"></script>
+  <title>Halloween is here</title>
+</head>
+
+<body>
+  
+  <a href="#header" id="topbut"> Go to top	&#9650;</a>
+    
+  <div class="container" id="header">     
+    <div class="inheader" id="name">
+      <h2>Halloween is here</h2>
+    </div>
+    <div class="inheader" id="nav">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#decoration">Decoration</a>
+        <a href="#food">Dishes</a>
+        <a href="#youtube">More</a>
+      </nav>
+    </div>
+  </div>
+    
+  <div id="about" class="container">
+    <h3>About the website</h3>
+    <div id="abouttext"> 
+      <p>You want to make something special for next Halloween, but don't know what exactly or where to start? This website is aimed to provide ideas for house decorating and cooking spooky dishes to create athmosphere of horror at your home <span class="crossed">(and make guests never come again)</span>. Treat yourselves and scare your guests!
+      </p>
+    </div>
+  </div>
+
+  <div class="container" id="decoration">
+    <h3>Ideas for decoration</h3>
+    <div id="slideshow">
+      <img class="slides fade" src="http://www.diynetwork.com/content/dam/images/diy/video/0/02/021/0211/0211131.jpg" alt="paper lanterns">
+      <img class="slides fade" src="https://assets.marthastewart.com/styles/wmax-520-highdpi/d16/hal04_tombstones/hal04_tombstones_hd.jpg?itok=-Q3hOX-e" alt="graves">
+      <img class="slides fade" src="https://i.pinimg.com/564x/cc/0f/df/cc0fdf4b0509b41c3950bf672842e535.jpg" alt="dead body in the bathtub">
+      <img class="slides fade" src="https://cdn.decoist.com/wp-content/uploads/2013/10/Bedrooms-that-seem-designed-for-Halloween-7.jpg" alt="bedroom with chain">
+      <img class="slides fade" src="https://i.pinimg.com/did-it/750x/b3/9b/e7/b39be7266aabd7f9815a841511eef29f.jpg" alt="kid's room decoration">
+      <img class="slides fade" src="https://i.pinimg.com/564x/75/2e/b4/752eb4059b234c145516509df61a0d1b.jpg" alt="skeleton in the garden">
+      <img class="slides fade" src="https://i.pinimg.com/564x/c4/e4/51/c4e451608b61928284d2451e7bc20205.jpg" alt="body in lawn-mower">
+      <img class="slides fade" src="https://i.pinimg.com/564x/e9/28/4b/e9284b9938c4c038671cef4eb1ec3904.jpg" alt="ghost with chandelier">
+      <img class="slides fade" src="https://i.pinimg.com/did-it/750x/72/fa/04/72fa0491a9c20522f54eeb9cd7520afb.jpg" alt="door decoration">
+      <img class="slides fade" src="https://i.pinimg.com/564x/48/58/42/4858423a5862d3f7f4287ae79fcc3b37.jpg" alt="creeping skeleton">
+      <button onclick="plusImgs(-1)">&#10094;</button>
+      <button onclick="plusImgs(+1)">&#10095;</button>
+    </div>
+</div>
+
+  <div class="container" id="food">
+    <h3>Ideas for dishes</h3>
+    <div class="box"> 
+        <img src="https://i.pinimg.com/564x/17/a2/bc/17a2bc7bfa80faa3b8d89cd637eff657.jpg" alt="cookie spider">
+        <p class="title">Funny spiders made of cookies, marshmallow and salty sticks. Aren't they cute?</p>
+    </div>   
+    <div class="box"> 
+        <img src="https://i.pinimg.com/564x/03/7f/b1/037fb1631bf6f9a679a85aca1e94d85f.jpg" alt="glass cupcake">
+        <p class="title">Broken glass cupcakes made of white frosting, red velvet cake mix, cream of tartar and light corn syrup</p>
+    </div> 
+     <div class="box"> 
+        <img src="https://i.pinimg.com/564x/5a/ae/23/5aae232249343e65b5bdf849ce33282b.jpg" alt="finger hot dog">
+        <p class="title">Your usual hot dogs, only with fingers. Mmmm, yummy</p>
+     </div>
+     <div class="box"> 
+        <img src="https://i.pinimg.com/564x/00/5b/95/005b9500d25ff60ff3d3e7482dbfe3c8.jpg" alt="vomiting pumpkin">
+        <p class="title">Looks delicious, but pumpkin, apparently, doesn't think so... All you need is a pumpkin, cookies and any salad will do!</p>
+     </div>
+     <div class="box"> 
+        <img src="https://i.pinimg.com/564x/4b/72/f5/4b72f590713ff7277ab435f428eca0fa.jpg" alt="stuffed pepper">
+        <p class="title">This one even looks pretty. Stuffed pepper is extremely easy to cook! Stuff it with your favourite meat or salad</p>
+     </div>
+     <div class="box"> 
+        <img src="https://i.pinimg.com/564x/88/21/4e/88214ef4ea99d17816f1c724e14cb023.jpg" alt="RIP ice-cream">
+        <p class="title">Just add a gravestone to your ice-cream!</p>
+     </div> 
+     <div class="box"> 
+        <img src="https://i.pinimg.com/564x/36/e6/be/36e6be24badd1646904cebca97a3e992.jpg" alt="spider eggs">
+        <p class="title">Nice appetizer for those who dare to eat it!</p>
+     </div>      
+   </div>
+     
+   <div class="container" id="youtube">
+    <h3> More ideas... </h3>   
+        <div> 
+            <p>Is anyone interested in making a Dementor?</p>    
+            <div id="player1" class="player"></div>
+        </div>      
+        <div> 
+            <p>If you're also considering dressing up your pets, you might enjoy this video:</p>    
+            <div id="player2" class="player"></div>
+        </div>
+        <div> 
+            <p>This one for spider lovers (these are extremely cute though)</p>    
+            <div id="player3" class="player"></div>
+        </div>
+   </div> 
+
+  <footer>
+      <p>Created by: Ray Chernobrivko, 2017</p>
+  </footer>
+
+</body>
+</html>

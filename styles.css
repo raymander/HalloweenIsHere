@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* default background picture for body */
+body {
+  background: url(https://st2.depositphotos.com/6661790/11747/i/950/depositphotos_117478338-stock-photo-watercolor-orange-blue-red-and.jpg);
+  text-align: center;
+}
+
+/*button to navigate to the top of the page. It uses JS function scrollFunction() */
+#topbut {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; 
+  display:none;
+  z-index:99;
+}
+
+/*container class is assigned to all four main divs (#about, #decoration, #food and #youtube) */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 3%;
+  background-color: rgba(255, 248, 220, 0.5);
+}
+
+#header {
+  background-color: rgba(255, 248, 220, 0.5);
+  border-bottom: 10px double #19334d;
+  padding: 0;
+}
+
+/*main title of the page*/
+h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 5em;
+  padding: 12px;
+  color: #19334d;
+  white-space: nowrap;
+  text-shadow: 0px 5px DarkOrange;
+}
+
+/*div containing the main title */
+#name {
+  flex: 2;
+}
+
+/*menu bar*/
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 20px;
+}
+
+/*menu links*/
+.inheader a {
+  color: #800000;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  margin-right: 7px;
+  border-radius: 20px;
+  border: 3px solid DarkOrange;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*titles for the main divs */
+h3 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  padding-top: 15px;
+  white-space: nowrap;
+  width: 100%;
+  text-shadow: 0px 3px DarkOrange;
+}
+
+/*div containing info about the website */
+#about {
+  text-align: center;
+  background: url(https://images6.alphacoders.com/552/552086.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+/*text in the "about" section */
+#abouttext {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  font-size: 20px;
+  width: 50%;
+  padding: 15px;
+  margin: 2em auto 4em auto;
+  line-height: 180%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*crossed out text in "about" section */
+.crossed {
+  text-decoration: line-through; 
+}
+
+/*section with the slideshow */
+#decoration {
+  background: url(https://images7.alphacoders.com/312/thumb-1920-312453.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+/* div with slides + buttons in "decoration" */
+#slideshow {
+  width: 100%;
+}
+
+/*changeable pictures */
+.slides {
+  height: 600px;
+  object-fit: cover;
+  max-width: 100%;
+  margin: 20px auto;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+#slideshow button { 
+  width:120px;
+  height:40px;
+  margin: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  color:white;
+  background-color: #19334d;
+  background:linear-gradient(to bottom, #26517c 5%, #19334d 100%);
+  font-weight: bold;
+  border: 2px solid #19334d;
+}
+
+/*pictures fading on transition */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/*ideas for dishes*/
+#food {
+  background: url(https://images3.alphacoders.com/163/thumb-1920-163517.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+/*div containing food img + its title */
+.box {
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+/*caption for each food img */
+.title {
+  font-size: 17px;
+  padding:7px;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  margin-top:-73px;
+  width:355px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 0 0 10px 10px;
+  height: 55px;
+  overflow: auto;
+}
+
+/*food img */
+.box img {
+  background: white;
+  width: 360px;
+  height: 360px;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid #cccccc;
+}
+
+/*section with yotube videos */
+#youtube {
+  padding: 20px 0 30px;
+  background-color: rgba(255, 248, 220, 0.75);
+}
+
+#youtube div {
+    margin-bottom: 20px;
+}
+
+#youtube h3 {
+    color: #19334d;
+}
+
+#youtube p {
+  font-size: 22px;
+  padding: 20px;
+  line-height: 180%;
+  font-family: 'Josefin Sans', sans-serif; 
+}
+
+footer {
+   background-color: rgba(255, 248, 220, 0.5);
+   border-top: 10px double #19334d;
+}
+
+footer p {
+  text-align: left;
+  padding: 17px;
+  padding-bottom: 30px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 21px;
+  color: #19334d;
+  font-weight: bold;
+}
+
+
+/* mobile view affects almost all the styling */
+@media only screen and (max-width: 767px) {
+    
+  #topbut {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .container {
+    margin-bottom: 0%;
+    border-bottom: 10px double #19334d;
+  }
+    
+  #header {
+    padding-bottom: 5px;
+  }
+  h2 {
+    font-size: 2.5em;
+    padding: 7px;
+    text-shadow: 0px 3px DarkOrange;
+  }
+  h3 {
+    font-size: 2em;
+    padding: 7px;
+    padding-top: 15px;
+    color: #19334d;
+    text-shadow: 0px 1px DarkOrange;
+  }
+  .inheader a {
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 2px solid DarkOrange;
+    margin-right: 3px;
+  }
+    
+  #about h3 {
+    color: white;
+  }
+    
+  #decoration {
+    background-image: none;
+    background-color: rgba(205,205,205,0.4);
+  } 
+  #slideshow button {
+    margin: 5px;
+    margin-bottom: 15px;
+  }
+  .slides {
+    object-fit: contain;
+    box-shadow: 0 0;
+    border: 0;
+    max-width: 100%;
+    max-height: 300px;
+  }
+    
+  #food {
+    background-image: none;
+    background-color: rgba(255, 248, 220, 0.5);
+  }
+  .box {
+    margin: 4px;
+    margin-bottom: 10px;
+  }
+  #abouttext {
+    font-size: 15px;
+    width: 100%;
+    line-height: 100%;
+  }
+  .box img {
+    height: 295px;
+    width: 295px;
+    border: 5px solid white;
+  }
+  .title{
+    width: 291px;
+    margin-top:-73px;
+    font-size: 15px;
+    background-color: rgba(255,255,255, 0.75);
+    color: black;
+  }
+
+  #youtube {
+    border-bottom: hidden;
+  }
+  #youtube div {
+    width:100%;
+    }
+  #youtube p {
+    font-size: 17px;
+    padding: 10px;
+    line-height: 120%;
+  }
+  .player {
+    max-width: 100%;
+    max-height: 250px;
+    }
+    
+  footer {
+     background-color: rgba(205,205,205,0.4);
+  }
+  footer p {
+    font-size: 16px;
+    padding: 10px;
+  }  
+}
+
+/*tablet view */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    
+  #topbut {
+    padding: 10px;
+    font-size: 17px;
+  }
+  .container {
+    margin-bottom: 0%;
+    border-bottom: 10px double #19334d;
+  }
+    
+  #header {
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 4em;
+    padding: 9px;
+  }
+  h3 {
+    font-size: 3em;
+    padding: 9px;
+    padding-top: 15px;
+  }
+  .inheader a {
+    padding: 10px 18px;
+    font-size: 17px;
+  }
+    
+    /*about*/
+  #abouttext {
+    font-size: 16px;
+    line-height: 150%;
+  }
+    
+    /*decoration*/
+  .slides {
+    max-width: 99%;
+  }
+    
+    /*food*/
+  .box {
+  margin: 15px;
+  margin-bottom: 30px;
+  }
+  .box img {
+  border: 5px solid White;
+  }
+    
+  #youtube {
+    border-bottom: hidden;
+  }
+}
+
+/*styling for laptop only */
+@media only screen and (min-width: 1025px) {
+ 
+    #topbut:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .inheader a:hover {
+      color: white;
+      background-color: #19334d;
+      border-color: #19334d;
+    }
+    
+    #slideshow button:hover {
+      background: linear-gradient(to bottom, #19334d 5%, #26517c 100%);
+    }
+    #slideshow button:active {
+      transform: translateY(4px);
+    }
+
+    /*making food titles appear on hover only */
+    .box .title {
+      display:none;
+    }
+    .box:hover .title {
+      display:block;   
+    }
+    .box:hover img {
+      border: 5px solid white;
+    }
+}
